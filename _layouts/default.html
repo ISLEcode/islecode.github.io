@@ -2,12 +2,6 @@
 ---
 
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
@@ -21,6 +15,7 @@
 
     <div class="initial-content">
       {{ content }}
+      <!--
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <div align="center" style="margin: 1em 0;">
         <ins class="adsbygoogle"
@@ -32,12 +27,11 @@
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+      -->
     </div>
 
     {% if site.search == true %}
-      <div class="search-content">
-        {% include search/search_form.html %}
-      </div>
+      <div class="search-content">{% include search/search_form.html %}</div>
     {% endif %}
 
     <div class="page__footer">
